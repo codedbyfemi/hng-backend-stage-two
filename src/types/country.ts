@@ -7,7 +7,7 @@ export interface CountryCreateInput {
   name: string;
   capital?: string;
   region?: string;
-  population: number;
+  population: bigint;
   currency_code?: string | null;
   exchange_rate?: number | null;
   estimated_gdp: number | null;
@@ -18,7 +18,7 @@ export interface RestCountryResponse {
   name: string;
   capital?: string;
   region?: string;
-  population: number;
+  population: bigint;
   flag?: string;
   currencies?: Array<{
     code: string;
