@@ -169,18 +169,6 @@ GET http://localhost:3000/status
 }
 ```
 
-### 6. Get Summary Image
-Retrieve the generated summary image.
-
-```bash
-GET http://localhost:3000/countries/image
-```
-
-Returns a PNG image with:
-- Total number of countries
-- Top 5 countries by GDP
-- Last refresh timestamp
-
 ## Prisma Commands
 
 ```bash
@@ -220,8 +208,6 @@ country-api/
 │   │   └── status.routes.ts
 │   ├── types/
 │   │   └── country.ts
-│   ├── utils/
-│   │   └── imageGenerator.ts
 │   ├── middleware/
 │   │   └── errorHandler.ts
 │   └── index.ts               # Application entry point
